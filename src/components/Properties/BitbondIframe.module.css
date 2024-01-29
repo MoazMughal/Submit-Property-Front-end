@@ -1,0 +1,32 @@
+.container {
+  display: flex;
+  align-items: center; /* Align items to the left */
+}
+
+.cardContainer {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden; /* Adjusted margin-right for space between card and iframe */
+  margin-left: 25px;
+  width: 500px;
+}
+
+.card {
+  width: 100%;
+}
+
+.imageContainer {
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+
+.imageContainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.detailsContainer {
+  padding: 10px;
+}

@@ -1,0 +1,364 @@
+.selectRooms {
+  /* border: 2px solid black; */
+  padding-left: 3rem;
+  padding-top: 2rem;
+  padding-right: 4rem;
+  padding-bottom: 4rem;
+}
+
+.roomTitle {
+  margin-bottom: 20px;
+  color: #002244;
+}
+
+.roomOptionsGroup {
+  /* border: 1px solid black; */
+  display: flex;
+  flex-direction: column;
+  max-width: 40%;
+  overflow: auto;
+  overflow-x: hidden;
+  max-height: 300px;
+  border-radius: 10px;
+  background: rgb(204, 204, 204);
+  background: rgba(255, 255, 255, 0.5);
+  padding: 1rem;
+}
+
+.roomOption {
+  margin: 0.5rem;
+  color: #002244;
+  border: 1px solid #002244;
+  max-width: 12rem;
+  height: 2rem;
+  padding-left: 1rem;
+  padding-top: 0.5rem;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.selectedRoomOption {
+  margin: 0.5rem;
+  color: #002244;
+  border: 2.5px solid #002244;
+  max-width: 12rem;
+  height: 2rem;
+  padding-left: 1rem;
+  padding-top: 0.5rem;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.selectedCheck {
+  margin-right: 1rem;
+  padding-bottom: 0.2rem;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.inputNoOfRooms {
+  font-size: 14px;
+  font-size: max(16px, 1em);
+  font-family: inherit;
+  padding: 0.25rem 0.5rem;
+  background: rgb(204, 204, 204);
+  background: rgba(255, 255, 255, 0.5);
+  border: 0.5px solid white;
+  border-radius: 4px;
+  height: 6rem;
+  width: 12rem;
+  color: #002244;
+  margin: 0.5rem;
+}
+
+input[type="text"],
+input[type="password"],
+textarea,
+select {
+  outline: none;
+}
+
+.inputNoOfRooms:focus {
+  border: 2.5px solid #002244;
+}
+
+@media (max-width: 319px) {
+  .selectRooms {
+    /* border: 2px solid black; */
+    padding-left: 1rem;
+    padding-top: 1rem;
+    padding-right: 1rem;
+  }
+
+  .roomTitle {
+    margin-bottom: 20px;
+    color: #002244;
+  }
+
+  .roomOptionsGroup {
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    max-width: 90%;
+    overflow: auto;
+    overflow-x: hidden;
+    max-height: 300px;
+    border-radius: 10px;
+    background: rgb(204, 204, 204);
+    background: rgba(255, 255, 255, 0.5);
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .roomOption {
+    margin: 0.5rem;
+    color: #002244;
+    border: 1px solid #002244;
+    max-width: 12rem;
+    height: 2rem;
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+    border-radius: 5px;
+  }
+
+  .selectedRoomOption {
+    margin: 0.5rem;
+    color: #002244;
+    border: 2.5px solid #002244;
+    max-width: 12rem;
+    height: 2rem;
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+    border-radius: 5px;
+  }
+
+  .buttonContainer {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+  }
+
+  .error {
+    padding-left: 0.5em;
+    color: #ba0021;
+  }
+}
+
+@media (min-width: 319px) and (max-width: 480px) {
+  .selectRooms {
+    /* border: 2px solid black; */
+    padding-left: 2rem;
+    padding-top: 1rem;
+    padding-right: 4rem;
+  }
+
+  .roomTitle {
+    margin-bottom: 20px;
+    color: #002244;
+  }
+
+  .roomOptionsGroup {
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    max-width: 90%;
+    overflow: auto;
+    overflow-x: hidden;
+    max-height: 350px;
+    border-radius: 10px;
+    background: rgb(204, 204, 204);
+    background: rgba(255, 255, 255, 0.5);
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .roomOption {
+    margin: 0.5rem;
+    color: #002244;
+    border: 1px solid #002244;
+    max-width: 12rem;
+    height: 2.5rem;
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+    border-radius: 5px;
+    padding-bottom: 0.5rem;
+  }
+
+  .selectedRoomOption {
+    margin: 0.5rem;
+    color: #002244;
+    border: 2.5px solid #002244;
+    max-width: 12rem;
+    height: 2.5rem;
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+    border-radius: 5px;
+    padding-bottom: 2rem;
+  }
+
+  .buttonContainer {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+  }
+
+  .inputNoOfRooms {
+    font-size: 16px;
+    font-size: max(16px, 1em);
+    font-family: inherit;
+    padding: 0.25em 0.5em;
+    background: rgb(204, 204, 204);
+    background: rgba(255, 255, 255, 0.5);
+    border: 0.5px solid white;
+    border-radius: 4px;
+    height: 2rem;
+    max-width: 9.7rem;
+    color: #002244;
+    margin: 0.5rem;
+    margin-bottom: -10px;
+  }
+
+  .error {
+    padding-left: 0.5em;
+    color: #ba0021;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 1200px) {
+  .selectRooms {
+    padding-left: 3rem;
+    padding-top: 2rem;
+    padding-right: 4rem;
+  }
+
+  .roomTitle {
+    margin-bottom: 20px;
+    color: #002244;
+  }
+
+  .roomOptionsGroup {
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    max-width: 70%;
+    overflow: auto;
+    overflow-x: hidden;
+    max-height: 270px;
+    border-radius: 10px;
+    background: rgb(204, 204, 204);
+    background: rgba(255, 255, 255, 0.5);
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .roomOption {
+    margin: 0.5rem;
+    color: #002244;
+    border: 1px solid #002244;
+    max-width: 12rem;
+    height: 4rem;
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+    border-radius: 5px;
+    padding-bottom: 0.5rem;
+  }
+
+  .selectedRoomOption {
+    margin: 0.5rem;
+    color: #002244;
+    border: 2.5px solid #002244;
+    max-width: 12rem;
+    height: 4rem;
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+    border-radius: 5px;
+    padding-bottom: 0.5rem;
+  }
+
+  .error {
+    padding-left: 0.5em;
+    margin-top: -10px;
+    color: #ba0021;
+  }
+}
+
+@media (min-width: 1201px) {
+  .selectRooms {
+    /* border: 2px solid black; */
+    padding-left: 3rem;
+    padding-top: 2rem;
+    padding-right: 4rem;
+    padding-bottom: 0;
+  }
+
+  .roomTitle {
+    margin-bottom: 20px;
+    color: #002244;
+  }
+
+  .roomOptionsGroup {
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    max-width: 40%;
+    overflow: auto;
+    overflow-x: hidden;
+    max-height: 270px;
+    border-radius: 10px;
+    background: rgb(204, 204, 204);
+    background: rgba(255, 255, 255, 0.5);
+    padding: 1rem;
+  }
+
+  .roomOption {
+    margin: 0.5rem;
+    color: #002244;
+    border: 1px solid #002244;
+    max-width: 12rem;
+    height: 5.5rem;
+    padding-left: 1rem;
+    padding-top: 0.7rem;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    cursor: pointer;
+    padding-bottom: 0.7rem;
+  }
+
+  .selectedRoomOption {
+    margin: 0.5rem;
+    color: #002244;
+    border: 2.5px solid #002244;
+    max-width: 12rem;
+    height: 6rem;
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    cursor: pointer;
+    padding-bottom: 0.5rem;
+  }
+
+  .buttonContainer {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .error {
+    padding-left: 0.5em;
+    margin-top: 5px;
+    color: #ba0021;
+  }
+}
