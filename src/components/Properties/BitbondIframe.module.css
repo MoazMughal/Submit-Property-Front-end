@@ -1,32 +1,70 @@
 .container {
   display: flex;
   align-items: center; /* Align items to the left */
+  margin-top: 20px; /* Add margin from the top */
+  margin-bottom: 20px; /* Add margin from the bottom */
 }
 
 .cardContainer {
   border: 1px solid #ccc;
   border-radius: 8px;
-  overflow: hidden; /* Adjusted margin-right for space between card and iframe */
+  overflow: hidden;
   margin-left: 25px;
   width: 500px;
 }
 
 .card {
   width: 100%;
+  position: relative; /* Add position relative */
 }
 
 .imageContainer {
   width: 100%;
   height: 400px;
   overflow: hidden;
+  position: relative; /* Add position relative */
 }
 
-.imageContainer img {
+.propertyImage {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
+.tagsContainer {
+  position: absolute;
+  top: 10px;
+  left: 0; /* Adjust left position */
+  right: 0; /* Adjust right position */
+  display: flex;
+  justify-content: space-between; /* Align tags at opposite ends */
+  padding: 0 10px; /* Add padding for spacing */
+}
+
+.tag {
+  background-color: #055308;
+  color: white;
+  font-size: 14px;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.tag:last-child {
+  margin-left: auto; /* Push the last tag to the right */
+}
+
 .detailsContainer {
   padding: 10px;
+}
+
+.detailItem {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px; /* Adjust as needed */
+}
+
+.detailValue {
+  flex: 1;
+  text-align: right;
+  font-weight: bold;
 }
